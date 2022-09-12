@@ -1,0 +1,55 @@
+* {
+	font-family:  Gill Sans Extrabold, sans-serif;
+}
+a {
+	color: rgb(147, 108, 185);
+}
+.title {
+	color:rgb(1, 35, 100);
+}
+#Paper-birds {
+	color:rgb(180, 170, 19);
+}
+.blue {
+	color: rgb(12, 155, 250);
+}
+.green {
+	color: rgb(21, 97, 21);
+}
+.yellow {
+	color: rgb(211, 211, 3);
+}
+.pink {
+	color: rgb(201, 59, 83);
+}
+.red {
+	color: rgb(207, 22, 22);
+}
+.grey {
+	color: rgb(61, 59, 59);
+}
+a.san {
+	color:rgb(255, 255, 0);
+}
+.green.more {
+	color:rgb(4, 22, 4);
+}
+.person,
+.tichiro {
+	color: red;
+}
+.all-tag p {
+	color: rgb(114, 24, 114);
+}
+.all-tag .dark {
+	color: rgb(4, 4, 14);
+}
+.grey > p {
+	color: rgb(57, 57, 194);
+}
+.pink ~ p {
+	color: blue;
+}
+.pink + p {
+	color: rgb(78, 78, 18);
+}
