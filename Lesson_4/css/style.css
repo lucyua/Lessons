@@ -1,0 +1,89 @@
+.header {
+	font-family: 'Rubik Moonrocks', cursive;
+	font-size: 26px;
+	color: rgb(15, 23, 139);
+}
+.intro {
+	font-family: 'Larsseit';
+	color: rgb(62, 65, 109);
+}
+.intro h1 {
+	font-family: 'Lato';
+	font-weight: 700;
+	color: rgb(20, 22, 44);
+}
+.gamers {
+	font-family: 'Larsseit';
+	color: rgb(71, 27, 141);
+}
+.gamers h2 {
+	font-size: 19px;
+	font-weight: 700;
+	color: rgb(20, 22, 44);
+}
+.gamers span {
+	font-weight: 700;
+}
+.gamers .medium {
+	font-weight: 500;
+}
+.apple {
+	font-family: 'Lato';
+	color: rgb(27, 102, 18);
+}
+.apple h2 {
+	font-size: 20px;
+	font-weight: 700;
+	color: rgb(5, 29, 1);
+}
+.apple .bold {
+	font-weight: 700;
+}
+.apple .black {
+	font-weight: 900;
+}
+img {
+	width: 50%;
+}
+.meta {
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: rgb(144, 35, 148);
+}
+.meta h2 {
+	font-size: 21px;
+	font-weight: 500;
+	color: rgb(50, 8, 66);
+}
+.meta h3 {
+	font-weight: 400;
+	color: rgb(61, 7, 82);
+}
+.meta .regular {
+	font-weight: 400;
+}
+.meta .medium {
+	font-weight: 500;
+}
+.meta ~ p {
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: rgb(144, 35, 148);
+}
+.meta + p {
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: rgb(144, 35, 148);
+}
+.meta.medium {
+	font-family: 'Roboto';
+	font-weight: 500;
+	color: rgb(144, 35, 148);
+}
+
+.elevator {
+	font-family: 'Rubik Moonrocks', cursive;
+	font-size: 26px;
+	color: rgb(131, 138, 233);
+}
+
