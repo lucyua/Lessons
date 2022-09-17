@@ -38,7 +38,7 @@
 	font-weight: 700;
 	color: rgba(0, 0, 0, 0.7);
 	text-transform: uppercase;
-	width: 600px;
+	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
@@ -50,7 +50,7 @@
 	margin-bottom: 20px;
 }
 .descr {
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	padding: 0px 40px;
