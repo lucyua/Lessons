@@ -189,7 +189,7 @@ margin-bottom: 40px;
 	width: 50%;
 	outline: 5px dotted #d4b5db;
 	border-radius: 20px;
-	transition: all 0.5 ease 0s;
+	transition: all 0.5s ease 0s;
 	opacity: 0.5;
 	margin-bottom: 35px;
 }
