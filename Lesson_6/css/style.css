@@ -1,0 +1,298 @@
+@font-face {
+	font-family: "Lato";
+	src: url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url('../fonts/Lato-Bold.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family: "Lato";
+	src: url('../fonts/Lato-Black.woff2') format('woff2'), url('../fonts/Lato-Black.woff') format('woff');
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family: "BaskervilleDisplayPT";
+   src: url('../fonts/BaskervilleDisplayPT-Regular.woff2') format('woff2'), url('../fonts/BaskervilleDisplayPT-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+	font-family: "BaskervilleDisplayPT";
+   src: url('../fonts/BaskervilleDisplayPT-Bold.woff2') format('woff2'), url('../fonts/BaskervilleDisplayPT-Bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+	font-family: "BaskervilleDisplayPT";
+   src: url('../fonts/BaskervilleDisplayPT-BoldItalic.woff2') format('woff2'), url('../fonts/../fonts/BaskervilleDisplayPT-BoldItalic.woff') format('woff');
+   font-weight: 700;
+   font-style: italic;
+   font-display: swap;
+}
+.maket {
+	font-family: "Lato";
+	color: #424551;
+}
+.maket .headline {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 59.8px;
+	color: #1E212C;
+	margin-bottom: 92px;
+}
+.image {
+	width: 100%;
+	margin-bottom: 60px;
+}
+.title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+.title ~ p {
+	font-size: 16px;
+	line-height: 25.6px;
+	margin-bottom: 48px;
+}
+.title + p {
+margin-bottom: 26px;
+}
+.quote {
+	padding-left: 58px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1E212C;
+	margin-bottom: 48px;
+}
+.list {
+	font-size: 16px;
+	line-height: 25.6px;
+	margin-bottom: 24px;
+	margin-bottom: 24px;
+}
+.list-text {
+	margin-bottom: 24px;
+}
+
+.list.item {
+	font-size: 16px;
+	line-height: 25.6px;
+	padding-left: 32px;
+	margin-bottom: 4px;
+}
+.list.item.last {
+	margin-bottom: 0px;
+}
+.list + p {
+	font-size: 16px;
+	line-height: 160%;
+	margin-bottom: 60px;
+}
+/* ======================================================================================= */
+/* ======================================================================================= */
+/* ======================================================================================= */
+.homework {
+	background-color: rgba(235, 199, 252, 0.644);
+	font-family: "BaskervilleDisplayPT";
+	box-shadow: 1px 1px 1px 5px #d4b5db, inset 1px 1px 5px 1px  #d4b5db;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.block-1 {
+	padding: 5px;
+	color: #252425;
+}
+.min-width {
+	font-weight: 700;
+	font-style: italic;
+	font-size: 25px;
+	text-align: center;
+	background-color:#e6bdd7af;
+	min-width: 400px;
+	margin-bottom: 25px;
+	padding: 10px;
+	border-radius: 25px;
+}
+.min-max {
+	font-size: 20px;
+	max-width: 600px;
+	line-height: 1.2;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+.max-width {
+	background-color:#e6bdd7af;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 25px;
+}
+.max-width a {
+	color: #606fa7;
+}
+.min-height {
+	background-color:#e6bdd7af;
+	min-height: 100px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 25px;
+}
+.max-height {
+	background-color:#d6bde6af;
+	max-height: 100px;
+	overflow: auto;
+	padding: 20px;
+	border-radius: 25px;
+}
+.recipe {
+	padding: 0px 50px;
+	color: rgb(60, 99, 60);
+}
+.recipe h2 {
+	font-size: 25px;
+	font-weight: 700;
+	font-style: italic;
+	max-width: 600px;
+	background-color:#bde6c6af;
+	border-radius: 25px;
+	line-height: 1.2;	
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.img-recipe {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	outline: 5px dotted #d4b5db;
+	border-radius: 20px;
+	transition: all 0.5s ease 0s;
+	opacity: 0.5;
+	margin-bottom: 35px;
+}
+.img-recipe:hover {
+	opacity: 1;
+}
+.img-recipe + p {
+	background-color:#bde6c6af;
+	border-radius: 25px;
+	line-height: 1.2;	
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	max-width: 200px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-decoration: overline;
+}
+.ingrid {
+	display: inline;
+	font-size: 20px;
+	line-height: 1.2;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.ingrid-1 {
+	display: inline-block;
+	background-color:#bde6c6af;
+	border-radius: 25px;
+	padding: 2px;
+	margin: 0 auto;
+	outline: 1px solid #dbeddfaf;
+}
+.salad {
+	border-radius: 84% 16% 70% 30% / 17% 82% 18% 83% ;
+	box-shadow: 17px 17px 17px 17px #dbeddfaf ;
+	background-color:#a2b3e5af;
+	display: inline-block;
+	text-align: center;
+	padding: 50px;
+	margin-bottom: 60px;
+}
+.salad-item {
+	background-color:#bde6c6af;
+	outline: 1px solid #dbeddfaf;
+	border-radius: 25px;
+	padding: 4px;
+	margin-bottom: 6px;
+}
+.sause {
+	display: inline-block;
+	padding: 50px;
+	border-radius: 84% 16% 70% 30% / 17% 82% 18% 83% ;
+	box-shadow: 17px 17px 17px 17px #dbeddfaf ;
+	background-color:#a2b3e5af;
+	margin-bottom: 70px;
+}
+.sause-item {
+	background-color:#bde6c6af;
+	outline: 1px solid #dbeddfaf;
+	border-radius: 25px;
+	padding: 4px;
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+.cook {
+	font-size: 20px;
+	line-height: 1.2;
+}
+.cook > p {
+	display: inline-block;
+	background-color:#bde6c6af;
+	border-radius: 25px;
+	padding: 2px;
+	outline: 1px solid #dbeddfaf;
+	margin-bottom: 15px;
+}
+.cook-item {
+	background-color:#bde6c6af;
+	outline: 1px solid #dbeddfaf;
+	border-radius: 25px;
+	padding: 4px;
+	font-size: 20px;
+	margin-bottom: 6px;
+	text-align: justify;
+	list-style: disc;
+}
+.visibility {
+	padding: 20px;
+	margin: 60px 40px 0px 40px;
+	border-radius: 25px;
+	background-color:#bde6c6af;
+	visibility: hidden;
+}
+.batton {
+	margin: 0px 0px 20px 0px;
+	font-family: "BaskervilleDisplayPT";
+	font-weight: 700;
+	display: inline-block;
+	text-transform: uppercase;
+	background-color:#e6bdd7af;
+	font-size: 20px;
+	padding: 25px;
+	color: #606fa7;
+	border-radius: 50px;
+	box-shadow: 0 5px 0 #d4b5db;
+}
+.batton:hover {
+	margin-top: 3px;
+	box-shadow: 0 2px 0 #d4b5db;
+}
