@@ -1,0 +1,99 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.woff2') format('woff2'),url('../fonts/Lato-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Bold.woff2') format('woff2'),url('../fonts/Lato-Bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Black.woff2') format('woff2'),url('../fonts/Lato-Black.woff') format('woff');
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+[class*="__container"]{
+	margin: 0 auto;
+	max-width: 1230px;
+}
+body {
+font-family: "Lato";
+}
+.section__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.section__image {
+max-width: 810px;
+margin: 0 auto;
+margin-bottom: 60px;
+}
+.section__main-text {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+.section__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 24px;
+}
+.section__text p:not(:last-child) {
+	margin-bottom: 24px;
+}
+.section__text--margin {
+margin-bottom: 48px;
+}
+.section__quaet {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 150%;
+	color: #1E212C;
+	padding-left: 58px;
+	margin-bottom: 48px;
+}
+.section__quaet::before {
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/braces.svg") 0 0 no-repeat;
+	width: 28px;
+	height: 20px;
+	margin-left: -58px;
+	margin-right: 30px;
+}
+.section__list {
+	margin-bottom: 24px;
+}
+.list {
+	padding-left: 32px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	color: #424551;
+}
+.list li:not(:last-child) {
+	margin-bottom: 4px;
+}
+.list li::before {
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/check.svg")  0 6px  no-repeat;
+	width: 18px;
+	height: 22px;
+	margin-left: -32px;
+	margin-right: 16px;
+}
