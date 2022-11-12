@@ -1,0 +1,329 @@
+@font-face {
+	font-family: 'Lato';
+src : url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
+font-style: normal;
+font-weight: 400;
+font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Bold.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Black.woff2') format('woff2'), url('../fonts/Lato-Black.woff')  format('woff');
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+[class*="__container"]{
+	margin: 0 auto;
+	max-width: 1230px;
+	min-height: 100%;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgb(19, 19, 135);
+	z-index: 100;
+}
+.menu {
+	font-size: 0;
+	text-align: center;
+}
+.menu__item {
+	position: relative;
+	display: inline-block;
+	
+}
+.menu__item:not(:last-child){
+	margin-right: 40px;
+}
+.menu__item:hover .sub-menu{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+.menu__link {
+	font-size: 16px;
+	color: yellow;
+	display: inline-block;
+	padding: 5px 0px;
+}
+.menu__link--red {
+	color: red;
+}
+.sub-menu {
+	background-color: #d5dc15ac;
+	padding: 15px;
+	position: absolute;
+	min-width: 180px;
+	top: 130%;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+}
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.sub-menu__link {
+	font-size: 16px;
+	color: rgb(15, 17, 125);
+}
+.page {
+	background: url('../img/bg.jpg') 0 0 no-repeat;
+	height: 100%;
+}
+.page__car {
+	position: relative;
+	height: 740px;
+	margin: 0 auto;
+}
+.car__body {
+	border-radius: 20% 65% 65% 65% / 20% 100% 50% 50%;
+	position: absolute;
+	bottom: 200px;
+	left: 300px;
+	width: 700px;
+	height: 150px;
+	background-color: rgb(83, 96, 239);
+}
+.disk {
+	border-radius: 60% 40% 64% 36% / 42% 60% 40% 58%;
+}
+.car__wheel--left .disk--1{
+	position: absolute;
+	bottom: 150px;
+	left: 400px;
+	z-index: 9;
+}
+.disk--1 {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(24, 23, 23);
+	box-shadow: -2px 1px 1px 1px #111;
+}
+.car__wheel--left .disk--2{
+	position: absolute;
+	bottom: 155px;
+	left: 405px;
+	z-index: 10;
+}
+.disk--2 {
+	width: 90px;
+	height: 90px;
+	background-color: rgb(37, 37, 37);
+}
+.car__wheel--left .disk--3{
+	position: absolute;
+	bottom: 158px;
+	left: 407px;
+	z-index: 11;
+}
+.disk--3 {
+	width: 85px;
+	height: 85px;
+	background-color: rgb(160, 158, 158);
+}
+.car__wheel--left .disk--4{
+	position: absolute;
+	bottom: 165px;
+	left: 415px;
+	z-index: 12;
+}
+.disk--4 {
+	width: 70px;
+	height: 70px;
+	background-color: rgb(233, 230, 230);
+}
+.car__wheel--left .disk--5{
+	position: absolute;
+	bottom: 180px;
+	left: 430px;
+	z-index: 13;
+}
+.disk--5 {
+	width: 40px;
+	height: 40px;
+	background: rgb(121, 120, 120) url('../img/icons/bmw.svg') center center no-repeat;
+}
+.car__wheel--right .disk--1 {
+	position: absolute;
+	bottom: 146px;
+	left: 781px;
+	z-index: 4;
+}
+.car__wheel--right .disk--2 {
+	position: absolute;
+	bottom: 150px;
+	left: 784px;
+	z-index: 5;
+}
+.car__wheel--right .disk--3 {
+	position: absolute;
+	bottom: 150px;
+	left: 788px;
+	z-index: 6;
+}
+.car__wheel--right .disk--4 {
+	position: absolute;
+	bottom: 157px;
+	left: 795px;
+	z-index: 7;
+}
+.car__wheel--right .disk--5 {
+	position: absolute;
+	bottom: 170px;
+	left: 810px;
+	z-index: 8;
+}
+.disk-stroke {
+	width: 130px;
+	height: 55px;
+	border-radius: 60% 40% 64% 36% / 42% 60% 0% 0%;
+	border: 5px solid rgba(116, 174, 255, 0.655);
+	border-bottom: none;
+}
+.disk-stroke--left{
+position: absolute;
+top: 470px;
+left: 380px;
+z-index: 2;
+}
+.disk-stroke--right{
+	position: absolute;
+	bottom: 210px;
+	left: 760px;
+	z-index: 3;
+}
+.car__bottom-stroke {
+	position: absolute;
+	top: 523px;
+	left: 480px;
+	width: 300px;
+	height: 18px;
+	background-color: rgba(116, 174, 255, 0.774);
+	border-radius: 30%;
+}
+.car__top {
+	border-radius: 37% 63% 0% 100% / 100% 100% 0% 0%;
+	position: absolute;
+	top: 300px;
+	left: 420px;
+	width: 440px;
+	height: 200px;
+	background-color: rgb(83, 96, 239);
+	z-index: 1;
+}
+.window__right {
+	border: 2px solid rgb(23, 23, 23);
+	background-color: rgba(223, 238, 64, 0.595);
+	border-radius: 0% 100% 0% 100% / 95% 100% 0% 5% ;
+	position: absolute;
+	top: 330px;
+	left: 620px;
+	width: 130px;
+	height: 80px;
+	z-index: 14;
+}
+.window__left {
+	border: 2px solid rgb(23, 23, 23);
+	background-color: rgba(223, 238, 64, 0.595);
+	border-radius: 95% 0% 100% 5% / 95% 100% 0% 5% ;
+	position: absolute;
+	top: 330px;
+	left: 477px;
+	width: 130px;
+	height: 77px;
+	z-index: 15;
+}
+.window__main {
+	border: 2px solid rgb(23, 23, 23);
+	background-color: rgba(223, 238, 64, 0.595);
+	width: 24px;
+	height: 108px;
+	border-radius: 0% 100% 0% 100% / 10% 64% 26% 79%;
+	transform: translate(30px, 20px) rotate(-45deg);
+	position: absolute;
+	bottom: 334px;
+	left: 739px;
+	z-index: 16;
+}
+.car__door-left {
+	position: absolute;
+	bottom: 225px;
+	left: 615px;
+	border: 1px solid  rgba(116, 174, 255, 0.774);
+	width: 160px;
+	height: 200px;
+	border-radius:  0% 100% 100% 0% / 95% 72% 28% 5% ;
+	z-index: 17;
+}
+.car__door-right {
+	position: absolute;
+	bottom: 230px;
+	left: 453px;
+	width: 160px;
+	height: 195px;
+	border: 1px solid rgba(116, 174, 255, 0.774);
+	border-radius: 100% 0% 0% 100% / 45% 100% 0% 55%;
+	z-index: 18;
+}
+.handle .handle__right {
+	position: absolute;
+	bottom: 300px;
+	left: 480px;
+	width: 20px;
+	height: 10px;
+	border-radius: 20%;
+	background-color: rgba(116, 174, 255, 0.774);
+	z-index: 19;
+}
+.handle__left {
+	position: absolute;
+	bottom: 300px;
+	left: 630px;
+	width: 20px;
+	height: 10px;
+	border-radius: 20%;
+	background-color: rgba(116, 174, 255, 0.774);
+	z-index: 20;
+}
+.car__headlight-top {
+	position: absolute;
+	bottom: 270px;
+	left: 963px;
+	width: 30px;
+	height: 20px;
+	border-radius: 20% 80% 16% 84% / 60% 100% 0% 40%;
+	border: 1px solid rgba(116, 174, 255, 0.774);
+	background-color: rgba(250, 255, 116, 0.774);
+	z-index: 20;
+}
+.car__headlight-behind {
+	position: absolute;
+	bottom: 300px;
+	left: 300px;
+	width: 30px;
+	height: 20px;
+	border-radius: 0% 100% 40% 60% / 100% 47% 53% 0% ;
+	border: 1px solid rgba(116, 174, 255, 0.774);
+	background-color: rgba(255, 192, 116, 0.774);
+	z-index: 21;
+}
+.footer {
+	width: 100%;
+	height: 40px;
+	background-color: rgb(0, 0, 0);
+}
