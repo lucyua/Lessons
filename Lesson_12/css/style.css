@@ -1,0 +1,240 @@
+body {
+	background-color: rgb(0, 0, 0);
+}
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+[class*="__container"]{
+	margin: 0px auto;
+	max-width: 1000px;
+}
+.page__circle {
+	padding: 100px 0px;
+}
+.circle__item {
+	margin: 0 auto;
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	border-radius: 50%;
+	transition: all 1s ease 0s;
+}
+.circle__item--1 {
+background-color: rgb(0, 0, 0);
+transform: scale(1.28);
+z-index: 1;
+}
+.circle__item--2 {
+	background-color: rgb(223, 147, 17);
+	transform: scale(1.23);
+	z-index: 2;
+}
+.circle__item--3 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(1.19);
+	z-index: 3;
+}
+.circle__item--4 {
+	background-color: rgb(75, 223, 17);
+	transform: scale(1.14);
+	z-index: 4;
+}
+.circle__item--5 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(1.09);
+	z-index: 5;
+}
+.circle__item--6 {
+	background-color: rgb(223, 65, 17);
+	transform: scale(1.04);
+	z-index: 6;
+}
+.circle__item--7 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.99);
+	z-index: 7;
+}
+.circle__item--8 {
+	background-color: rgb(17, 223, 158);
+	transform: scale(0.94);
+	z-index: 8;
+}
+.circle__item--9 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.89);
+	z-index: 9;
+}
+.circle__item--10 {
+	background-color: rgb(216, 17, 223);
+	transform: scale(0.84);
+	z-index: 10;
+}
+.circle__item--11 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.79);
+	z-index: 11;
+}
+.circle__item--12 {
+	background-color: rgb(47, 54, 150);
+	transform: scale(0.74);
+	z-index: 12;
+}
+.circle__item--13 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.69);
+	z-index: 13;
+}
+.circle__item--14 {
+	background-color: rgb(223, 147, 17);
+	transform: scale(0.64);
+	z-index: 14;
+}
+.circle__item--15 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.59);
+	z-index: 15;
+}
+.circle__item--16 {
+	background-color: rgb(75, 223, 17);
+	transform: scale(0.54);
+	z-index: 16;
+}
+.circle__item--17 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.49);
+	z-index: 17;
+}
+.circle__item--18 {
+	background-color: rgb(223, 65, 17);
+	transform: scale(0.44);
+	z-index: 18;
+}
+.circle__item--19 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.39);
+	z-index: 19;
+}
+.circle__item--20 {
+	background-color: rgb(17, 223, 158);
+	transform: scale(0.34);
+	z-index: 20;
+}
+.circle__item--21 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.29);
+	z-index: 21;
+}
+.circle__item--22 {
+	background-color: rgb(216, 17, 223);
+	transform: scale(0.24);
+	z-index: 22;
+}
+.circle__item--23 {
+	background-color: rgb(0, 0, 0);
+	transform: scale(0.19);
+	z-index: 23;
+}
+.circle__item--24 {
+	background-color: rgb(47, 54, 150);
+	transform: scale(0.14);
+	z-index: 24;
+}
+.circle__item--25 {
+	background: url('../img/bg_circle.jpg') 0 0 / cover no-repeat ;
+	transform: scale(0.09);
+	z-index: 25;
+}
+.circle:hover .circle__item:not(.circle__item--25) {
+	transform:  rotate(360deg);
+}
+.circle:hover .circle__item--25 {
+	transform:  rotate(180deg);
+}
+.block {
+	visibility: hidden;
+	opacity: 0;
+	perspective: 400px;
+	transition: all 1.2s ease 0s;
+}
+.donkey__img {
+	width: 40%;
+	height: 40%;
+	transform: translate( 40px, -75px);
+	z-index: 27;
+}
+.block__text {
+	font-family: "Rubik Distressed";
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	text-shadow: 1px 2px 1px rgba(233, 233, 233, 0.824);
+	color: rgba(24, 199, 215, 0.633);
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transform: rotateX(40deg);
+	z-index: 27;
+}
+.circle__item--25:hover .block{
+	visibility: visible;
+	opacity: 1;
+	transform:  rotate(-180deg);
+}
+.donkey__img {
+	transition: all 1.2s ease 0s;
+}
+.donkey:hover .donkey__img {
+	transform: translate3d(-30px, -30px, 30px);
+}
+.star__image {
+	width: 50px;
+	height: 50px;
+	z-index: 26;
+	transition: all 1.2s ease 0s;
+}
+.star__image--1 {
+	position: absolute;
+	top: -50%;
+	left: 20%;
+}
+.star__image--2 {
+	position: absolute;
+	top: -30%;
+	left: 35%;
+}
+.star__image--3 {
+	position: absolute;
+	top: -70%;
+	left: 45%;
+}
+.star__image--4 {
+	position: absolute;
+	top: 70%;
+	left: 45%;
+}
+.star__image--5 {
+	position: absolute;
+	top: -20%;
+	left: 90%;
+}
+.star__image:hover {
+	transform: rotate3d(1, 1, 1, -45deg);
+}
+.sreck {
+	z-index: 27;
+}
+.sreck__img {
+	position: absolute;
+	top: -70%;
+	left: 45%;
+	width: 40%;
+	height: 100%;
+	transform-style:preserve-3d;
+	transition: all 1.2s ease 0s;
+}
+.sreck:hover .sreck__img{
+	transform: rotateY(30deg);
+}
