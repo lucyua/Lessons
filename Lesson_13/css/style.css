@@ -32,7 +32,7 @@ background: url("../img/space.jpg") center / cover no-repeat;
 	bottom: 0;
 	left: 0;
 	transform: rotateX(75deg) rotateY(0deg) rotateZ(45deg);
-	transition: all 0.05s esse 0s;
+	transition: all 0.05s ease 0s;
 	box-shadow:30px 30px 50px rgba(120, 78, 149, 0.5);
 }
 .cube__item:nth-child(1){
