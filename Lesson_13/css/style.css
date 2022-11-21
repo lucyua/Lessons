@@ -1,0 +1,334 @@
+.wrapper {
+	position: relative;
+	overflow: hidden;
+	min-height: 100%;
+}
+body {
+background: url("../img/space.jpg") center / cover no-repeat;
+}
+.page__body {
+	min-height: 100%;
+}
+.cube {
+	width: 600px;
+	margin: 30% 0 0 20%;
+	height: 300px;
+	perspective: 1000px;
+	position: relative;
+}
+.cube__item {
+	position: absolute;
+	width: 33%;
+	height: 33%;
+	cursor: pointer;
+}
+.cube__item::before {
+	content: "";
+	width:300px;
+	height: 300px;
+	border: 5px double rgb(75, 11, 121);
+	background-color: rgba(189, 161, 207, 0.914);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: rotateX(75deg) rotateY(0deg) rotateZ(45deg);
+	transition: all 0.05s esse 0s;
+	box-shadow:30px 30px 50px rgba(120, 78, 149, 0.5);
+}
+.cube__item:nth-child(1){
+	left:0;
+	top: 33%;
+	animation: first-cube 10s infinite ease-in;
+	z-index: 1;
+}
+.cube__item:nth-child(2) {
+	left: 37%;
+	top: 14%;
+	animation: second-cube 10s infinite ease-in ;
+	z-index: 3;
+}
+.cube__item:nth-child(3) {
+	top: -5%;
+	left: 74%;
+	animation: last-cube 10s infinite ease-in ;
+	z-index: 5;
+}
+.cube--second {
+	position: absolute;
+	top: 7.5%;
+	left: 15.2%;
+	z-index: 4;
+}
+.cube--second .cube__item:nth-child(1) {
+	animation: cube-first 10s infinite ease-in;
+}
+.cube--second .cube__item:nth-child(2) {
+	animation: cube-second 10s infinite ease-in;
+}
+.cube--second .cube__item:nth-child(3) {
+	animation: cube-last 10s infinite ease-in;
+}
+.cube__item:hover::before{
+	background:rgba(154, 241, 226, 0.851);
+	box-shadow:30px 30px 50px rgba(1, 1, 2, 0.5);	
+}
+@keyframes first-cube {
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(669px, -58px);
+	}
+	50%{
+		transform: translate(0px, 0px)
+	}
+	75%{
+		transform: translate(223px, 55px);
+	}
+	100%{
+		transform: translate(0px, 0px)
+	}
+} 
+@keyframes second-cube {
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(-8px, 115px)
+	}
+	50%{
+		transform: translate(0px, 0px)
+	}
+	75%{
+		transform: translate(-222px, 57px);
+	}
+	100%{
+		transform: translate(0px, 0px)
+	}
+}
+@keyframes last-cube {
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(0px, 115px)
+	}
+	50%{
+		transform: translate(0px, 0px)
+	}
+	75%{
+		transform: translate(-215px, 60px);
+	}
+	100%{
+		transform: translate(0px, 0px)
+	}
+}
+@keyframes cube-first{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(-219px, -57px)
+	}
+	50%{
+		transform: translate(0px, 0px)
+	}
+	75%{
+		transform: translate(222px, -172px);
+	}
+	100%{
+		transform: translate(0px, 0px)
+	}
+}
+@keyframes cube-second{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(0px, -114px)
+	}
+	50%{
+		transform: translate(0px, 0px)
+	}
+	75%{
+		transform: translate(220px, -57px);
+	}
+	100%{
+		transform: translate(0px, 0px)
+	}
+}
+@keyframes cube-last{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(-446px, 0px)
+	}
+	50%{
+		transform: translate(0px, 0px)
+	}
+	75%{
+		transform: translate(-220px, 58px);
+	}
+	100%{
+		transform: translate(0px, 0px)
+	}
+}
+.personage__image {
+	position: absolute;
+	z-index: 10;
+}
+.personage__img {
+	width: 100px;
+	height: 100px;
+}
+.personage__image--1{
+	animation: personage-first 5s infinite ease-in;	
+	top: 400px;
+	left: 380px;
+}
+.personage__image--2{
+	animation: personage-second 5s infinite ease-in;	
+	top: 450px;
+	left: 560px;
+}
+.personage__image--3{
+	animation: personage-third 5s infinite ease-in;	
+	top: 360px;
+	left: 600px;
+	z-index: 9;
+}
+.personage__image--4{
+	animation: personage-fourth 5s infinite ease-in;	
+	top: 300px;
+	left: 870px;
+	z-index: 9;
+}
+.personage__image--5{
+	animation: personage-fifth 5s infinite ease-in;	
+	top: 400px;
+	left: 800px;
+	z-index: 9;
+}
+.personage__image--6{
+	animation: personage-sixth 5s infinite ease-in;	
+	top: 340px;
+	left: 1030px;
+	z-index: 9;
+}
+@keyframes personage-first{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(0px, -200px) rotate(45deg);
+
+	}
+	50%{
+		transform: translate(180px, 70px);
+	}
+	75%{
+		transform: translate(58px, -300px);
+		
+	}
+	100%{
+		transform: translate(0px, 0px);
+	}
+}
+@keyframes personage-second{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(-60px, -230px) ;
+
+	}
+	50%{
+		transform: translate(500px, -70px);
+	}
+	75%{
+		transform: translate(58px, -300px) rotate(-45deg);
+		
+	}
+	100%{
+		transform: translate(0px, 0px);
+	}
+}
+@keyframes personage-third{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(0px, -230px) scale(2);
+
+	}
+	50%{
+		transform: translate(0px, 0px);
+	}
+	75%{
+		transform: translate(58px, 220px) rotate(360deg) scale(3);
+		
+	}
+	100%{
+		transform: translate(0px, 0px);
+	}
+}
+@keyframes  personage-fourth{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(-50px, -250px);
+
+	}
+	50%{
+		transform: translate(-570px,90px);
+	}
+	75%{
+		transform: translate(58px, 220px) rotate(-760deg) scale(1.8);
+		
+	}
+	100%{
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes  personage-fifth{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(30px, 200px) scale(0.6) rotate(360deg);
+
+	}
+	50%{
+		transform: translate(0px, 0px);
+	}
+	75%{
+		transform: translate(58px, -320px);
+		
+	}
+	100%{
+		transform: translate(0px, 0px);
+	}
+}
+@keyframes  personage-sixth{
+	0%{
+		transform: translate(0px, 0px);
+	}
+	25%{
+		transform: translate(-230px, -200px) ;
+
+	}
+	50%{
+		transform: translate(-430px, 100px);
+	}
+	75%{
+		transform: translate(58px, -320px) scale(2.3);
+		
+	}
+	100%{
+		transform: translate(0px, 0px);
+	}
+}
+
