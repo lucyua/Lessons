@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__block">
+					<a href="#" class="header__logo">Flexbox</a>
+					<ul class="header__menu menu">
+						<li class="menu__item">
+							<a href="#jastify-content" class="menu__link ">Jastify-content</a>
+						</li>
+						<li class="menu__item">
+							<a href="#align-items" class="menu__link ">Align-items</a>
+						</li>
+						<li class="menu__item">
+							<a href="#flex-direction" class="menu__link">Flex-direction</a>
+						</li>
+						<li class="menu__item">
+							<a href="#align-self" class="menu__link">Align-self</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Home work</a>
+							<ul class="menu__sub-menu sub-menu">
+								<li class="sub-menu__item">
+									<a href="#fishka" class="sub-menu__link">Columns</a>
+								</li>
+								<li class="sub-menu__item">
+									<a href="#text-block" class="sub-menu__link">Text block</a>
+								</li>
+								<li class="sub-menu__item">
+									<a href="#cards" class="sub-menu__link">Cards</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="page page--margin-top">
+			<div class="page__container">
+				<div class="page__block block">
+					<div class="block__title title">
+						<div id="jastify-content" class="title__name">How does it work <span>Jastify-content</span></div>
+					</div>
+					<div class="block__example example">
+						<div class="example__value">Flex-start (default)</div>
+						<div class="example__block">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+					<div class="block__example example">
+						<div class="example__value">Flex-end</div>
+						<div class="example__block example__block--end">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+					<div class="block__example example">
+						<div class="example__value">Center</div>
+						<div class="example__block example__block--center">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+					<div class="block__example example">
+						<div class="example__value">Space-between</div>
+						<div class="example__block example__block--space-between">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+					<div class="block__example example">
+						<div class="example__value">Space-around</div>
+						<div class="example__block example__block--space-around">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+					<div class="block__example example">
+						<div class="example__value">Space-evenly</div>
+						<div class="example__block example__block--space-evenly">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="title">
+						<div id="align-items" class="title__name">How does it work <span>Align-items</span></div>
+					</div>
+					<div class="block__example example example--align-items">
+						<div class="example__value">Stretch (default)</div>
+						<div class="example__block example__block--align-items">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+					<div class="block__example example example--align-items">
+						<div class="example__value">Flex-start</div>
+						<div class="example__block example__block--align-items example__block--align-items-start">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+					<div class="block__example example example--align-items">
+						<div class="example__value">Flex-end</div>
+						<div class="example__block example__block--align-items example__block--align-items-end">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+					<div class="block__example example example--align-items">
+						<div class="example__value">Center</div>
+						<div class="example__block example__block--align-items example__block--align-items-center">
+							<div class="example__item">A</div>
+							<div class="example__item">B</div>
+							<div class="example__item">C</div>
+						</div>
+					</div>
+				</div>
+				<div class="page__block-second block-second">
+					<div class="title">
+						<div id="flex-direction" class="title__name">How does it work <span>Flex-direction</span></div>
+					</div>
+					<div class="block-second__body">
+						<div class="block-second__value">Row (default)</div>
+						<div class="block-second__items">
+							<div class="block-second__item">A</div>
+							<div class="block-second__item">B</div>
+							<div class="block-second__item">C</div>
+						</div>
+					</div>
+					<div class="block-second__body">
+						<div class="block-second__value">Row-reverse</div>
+						<div class="block-second__items block-second__items--row-reverse">
+							<div class="block-second__item">A</div>
+							<div class="block-second__item">B</div>
+							<div class="block-second__item">C</div>
+						</div>
+					</div>
+					<div class="block-second__body">
+						<div class="block-second__value">Column</div>
+						<div class="block-second__items block-second__items--column">
+							<div class="block-second__item">A</div>
+							<div class="block-second__item">B</div>
+							<div class="block-second__item">C</div>
+						</div>
+					</div>
+					<div class="block-second__body">
+						<div class="block-second__value">Column-reverse</div>
+						<div class="block-second__items block-second__items--column-reverse">
+							<div class="block-second__item">A</div>
+							<div class="block-second__item">B</div>
+							<div class="block-second__item">C</div>
+						</div>
+					</div>
+					<div class="title title--margin-top">
+						<div id="align-self" class="title__name">How does it work <span>Align-self</span></div>
+					</div>
+					<div class="block-second__body">
+						<div class="block-second__value">
+							All properties</div>
+						<div class="block-second__items block-second__items--column block-second__items--self">
+							<div class="block-second__item block-second__item--self">Flex-start</div>
+							<div class="block-second__item block-second__item--self">Auto</div>
+							<div class="block-second__item block-second__item--self">Center</div>
+							<div class="block-second__item block-second__item--self">Flex-end</div>
+						</div>
+					</div>
+				</div>
+				<div class="title ">
+					<div id="fishka" class="title__name"> Indented columns <span>without gap</span></div>
+				</div>
+				<div class="page__fishka fishka">
+					<div class="fishka__row">
+						<div class="fishka__column">
+							Column A
+						</div>
+					</div>
+					<div class="fishka__row">
+						<div class="fishka__column">
+							Column B
+						</div>
+					</div>
+					<div class="fishka__row">
+						<div class="fishka__column">
+							Column C
+						</div>
+					</div>
+					<div class="fishka__row">
+						<div class="fishka__column">
+							Column D
+						</div>
+					</div>
+				</div>
+				<div class="title ">
+					<div id="text-block" class="title__name"><span>Text block</span></div>
+				</div>
+				<div class="page__text-block text-block">
+					<h1 id="text-block" class="text-block__title">Lorem ipsum dolor sit amet.</h1>
+					<div class="text-block__text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur incidunt maxime dignissimos veniam
+						beatae reiciendis minus iste, sequi voluptatibus placeat harum maiores nulla amet sint eos nesciunt
+						qui
+						veritatis soluta.
+					</div>
+					<a class="text-block__link">Reprehenderit natus quaerat eaque dicta.</a>
+				</div>
+				<div class="title ">
+					<div id="cards" class="title__name">Example <span>Cards</span></div>
+				</div>
+				<div class="page__cards cards">
+					<div class="cards__column">
+						<div class="cards__item item-card">
+							<div class="item-card__image">
+								<img src="img/lemon.jpg" alt="Lemon ice cream">
+							</div>
+							<div class="item-card__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+							</div>
+							<a href="" class="item-card__button">Button</a>
+						</div>
+					</div>
+					<div class="cards__column">
+						<div class="cards__item item-card">
+							<div class="item-card__image">
+								<img src="img/strawberry.jpg" alt="Strawberry ice cream">
+							</div>
+							<div class="item-card__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+							</div>
+							<a href="" class="item-card__button">Button</a>
+						</div>
+					</div>
+					<div class="cards__column">
+						<div class="cards__item item-card">
+							<div class="item-card__image">
+								<img src="img/peach.jpg" alt="Peach ice cream">
+							</div>
+							<div class="item-card__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt eaque odio dicta!
+								Lorem ipsum dolor sit, amet consectetur adipisicing.Lorem ipsum dolor sit, amet consectetur
+								adipisicing.
+							</div>
+							<a class="item-card__button" href="">Button</a>
+						</div>
+					</div>
+				</div>
+				<div class="page__sample sample">
+					<div class="sample__item item-sample">
+						<div class="item-sample__image">
+							<img src="img/tree.jpg" alt="Tree">
+						</div>
+						<div class="item-sample__text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ea neque magni eaque iusto
+							adipisci vero cum facere veniam aut!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Voluptatem ea neque magni eaque iusto
+							adipisci vero cum facere veniam aut!
+						</div>
+					</div>
+					<div class="sample__item item-sample">
+						<div class="item-sample__image">
+							<img src="img/forest.jpeg" alt="Forest">
+						</div>
+						<div class="item-sample__text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ea neque magni eaque iusto
+							adipisci vero cum facere veniam aut!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Voluptatem ea neque magni eaque iusto
+							adipisci vero cum facere veniam aut!
+						</div>
+					</div>
+					<div class="sample__item item-sample">
+						<div class="item-sample__image">
+							<img src="img/mountains.jpg" alt="Mountains">
+						</div>
+						<div class="item-sample__text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem ea neque magni eaque iusto
+							adipisci vero cum facere veniam aut!Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Voluptatem ea neque magni eaque iusto
+							adipisci vero cum facere veniam aut!
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			Footer
+		</footer>
+	</div>
+</body>
+
+</html>
